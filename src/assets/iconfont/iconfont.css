@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "travel-iconfont"; /* Project id 3444903 */
+  /* Color fonts */
+  src: 
+       url('iconfont.woff2?t=1662102305446') format('woff2'),
+       url('iconfont.woff?t=1662102305446') format('woff'),
+       url('iconfont.ttf?t=1662102305446') format('truetype');
+}
+
+.travel-iconfont {
+  font-family: "travel-iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.travel-icon-arrow-left-bold:before {
+  content: "\e685";
+}
+
+.travel-icon-arrow-right-bold:before {
+  content: "\e687";
+}
+
+.travel-icon-wodefankui:before {
+  content: "\e656";
+}
+
+.travel-icon-youji:before {
+  content: "\e61e";
+}
+
+.travel-icon-gouwuchekong:before {
+  content: "\e601";
+}
+
+.travel-icon-dianhua:before {
+  content: "\e797";
+}
+
+.travel-icon-home:before {
+  content: "\e7c6";
+}
+
+.travel-icon-shanchu:before {
+  content: "\e600";
+}
+
+.travel-icon-menpiao:before {
+  content: "\e8b1";
+}
+
+.travel-icon-xianlu:before {
+  content: "\e603";
+}
+
+.travel-icon-yuding:before {
+  content: "\e63f";
+}
+
+.travel-icon-rcd-angle-double-down:before {
+  content: "\e60b";
+}
+
+.travel-icon-flag:before {
+  content: "\e664";
+}
+
+.travel-icon-user:before {
+  content: "\e7ae";
+}
+
+.travel-icon-password:before {
+  content: "\e75b";
+}
+
+.travel-icon-weibo:before {
+  content: "\e636";
+}
+
+.travel-icon-weixin:before {
+  content: "\e607";
+}
+
+.travel-icon-arrowdown:before {
+  content: "\e692";
+}
+
+.travel-icon-long-arrow-right:before {
+  content: "\e8fe";
+}
+
