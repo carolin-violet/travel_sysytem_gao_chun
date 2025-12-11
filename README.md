@@ -1,46 +1,55 @@
 # 高淳旅游服务管理系统
 
-> 不同的代码分别放在3个不同分支了
-## 本项目已经不再维护了，只有参考意义
+高淳旅游一体化解决方案，包含后台管理、游客前台与前台后端。当前仓库为管理端 Vue 项目，已停止维护，仅供学习参考。
 
-> 该系统为采用springboot+vue的前后端分离模式开发
+## 仓库与分支
 
-**后台部分主要包含管理员管理、管理员权限管理、游客管理、美食管理、旅馆管理、景点管理、线路管理、游记管理、反馈管理以及评论管理**
+- 管理端（本分支）：基于 Vue2 + ElementUI 的后台管理 UI
+- 游客前台：Nuxt/Tailwind 前端（独立分支）
+- 前台后端：Koa2 服务（独立分支）
 
-## 技术栈:
+## 核心功能（管理端）
 
-> 后端技术栈主要为springboot、mybatis-plus、spring-security、mysql、redis，图片存储用的是阿里云oss存储、短信服务目前是腾讯云的短信验证服务、然后调用了百度AI开放平台的情感倾向分析借口对游客评论做了情感分析
+- 管理员与权限：管理员、角色、菜单权限
+- 业务数据：游客、景点、线路、美食、旅馆、游记、评论、反馈、订单等管理
+- 内容运营：公告、照片、文章/游记富文本编辑
+- 日志与统计：操作日志、看板图表、评论情感分析
 
-> 前端后台技术栈主要为Vue全家桶、ElementUI、axios、vue-puzzle-vcode、Echarts
+## 技术栈概览
 
-> 前端前台技术栈主要为 Nuxt框架、TailwindCSS、Vue全家桶、ElementUI、axios
-> 
-> 前台后端技术栈主要为koa2框架
+- 后端（独立服务）：Spring Boot、MyBatis-Plus、Spring Security、MySQL、Redis；文件存储用阿里云 OSS，短信用腾讯云，评论情感分析用百度 AI
+- 管理端前端（本仓库）：Vue 2、ElementUI、Axios、ECharts、vue-puzzle-vcode
+- 游客前台：Nuxt、TailwindCSS、Vue 生态
+- 前台后端：Koa2
 
-成品展示：
+## 本地运行（管理端）
+
+依赖：Node >= 8.9，npm >= 3。若需真实数据，请先启动后端服务并在接口配置中指向对应地址。
+
+```bash
+npm install
+npm run dev          # 本地调试
+npm run build:prod   # 生产构建
+npm run lint         # 代码检查
+npm run test:unit    # 单元测试
+```
+
+## 目录速览
+
+- `src/api`：业务接口封装
+- `src/views`：各业务页面（景点、美食、线路、日志、统计等）
+- `src/router`：路由与权限控制
+- `src/store`：Vuex 模块
+- `src/styles`：全局样式与主题
+- `src/components`：通用组件（面包屑、图标、上传等）
+
+## 成品截图
 
 ![](https://gitee.com/carolin-violet/travel_system_-gao-chun/raw/management-platform/markdown_images/1.webp)
-
 ![](https://gitee.com/carolin-violet/travel_system_-gao-chun/raw/management-platform/markdown_images/2.webp)
-
 ![](https://gitee.com/carolin-violet/travel_system_-gao-chun/raw/management-platform/markdown_images/3.webp)
-
 ![](https://gitee.com/carolin-violet/travel_system_-gao-chun/raw/management-platform/markdown_images/4.webp)
-
 ![](https://gitee.com/carolin-violet/travel_system_-gao-chun/raw/management-platform/markdown_images/5.webp)
-
 ![](https://gitee.com/carolin-violet/travel_system_-gao-chun/raw/management-platform/markdown_images/6.webp)
-
 ![](https://gitee.com/carolin-violet/travel_system_-gao-chun/raw/management-platform/markdown_images/7.webp)
-
 ![](https://gitee.com/carolin-violet/travel_system_-gao-chun/raw/management-platform/markdown_images/8.webp)
-
-![](https://gitee.com/carolin-violet/travel_system_-gao-chun/raw/management-platform/markdown_images/9.webp)
-
-![](https://gitee.com/carolin-violet/travel_system_-gao-chun/raw/management-platform/markdown_images/10.webp)
-
-![](https://gitee.com/carolin-violet/travel_system_-gao-chun/raw/management-platform/markdown_images/11.webp)
-
-![](https://gitee.com/carolin-violet/travel_system_-gao-chun/raw/management-platform/markdown_images/12.webp)
-
-![](https://gitee.com/carolin-violet/travel_system_-gao-chun/raw/management-platform/markdown_images/13.webp)
